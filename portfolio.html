@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- upto 2 directory depth-->
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Faiz Dev & Co.</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
+    </noscript>
+    <meta name="description" content="Faiz Dev & Co. is a leading web agency offering website development, eCommerce solutions, 
+    and custom web services. We specialize in building high-performance, responsive websites to boost your online business.">
+    <meta name="keywords" content="Website Designer, Web Designer, Realestate Website Designer, web solutions, web agency, web agency near me,
+     web agency usa, web agency in west bengal, web designer in uae, web designer siliguri, siliguri institue of technology, sit siliguri, sit">
+    <meta name="robots" content="index, follow">
+    <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon_io" type="image/x-icon">
+    <script src="disable.js"></script>
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+
+        body{
+          scroll-behavior: smooth;
+        }
+        
+      </style>
+    </noscript>
+    <style>
+     
+      .main_logo{
+        height: 40px;
+      }
+
+      .faizz{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+      }
+      .faizz:hover{
+        box-shadow: none;
+      }
+      
+      .btn-tabs{
+        padding: .3rem .7rem;
+        border-radius: 5px;
+        font-weight: 400;
+      }
+
+      @media (max-width: 576px) {
+        .btn-tabs {
+          width: auto; /* Make buttons full-width on small screens */
+        }
+        .btn-faiz{
+            overflow: scroll;
+        }
+      }
+
+      .d-flex.overflow-auto {
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        scrollbar-width: none; /* Narrow scrollbar for Firefox */
+      }
+      .d-flex.overflow-auto::-webkit-scrollbar {
+        height: 5px; /* Height for horizontal scrollbar */
+      }
+      .d-flex.overflow-auto::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2); /* Thumb color */
+        border-radius: 5px; /* Rounded scrollbar */
+      }
+
+      .card-shadow {
+        transition: all ease-in-out 0.1s;
+        cursor: pointer;
+    }
+    .card-shadow:hover{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    }
+    </style>
+  </head>
+  <body id="top">
+    <header class="bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
+        <!-- <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="https://faizdevandco.online/">Faiz Dev & Co.</a> -->
+        <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="https://faizdevandco.online/"><img class="main_logo" src="main_logo.png" alt="Main logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-2">
+              <li class="nav-item"><a class="nav-link" href="https://faizdevandco.online/">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li> -->
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul> <a class="btn btn-primary faizz" href="tel:+91 7294800465">+91 7294800465</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <!-- Filterable tabs  -->
+      <div class="container mx-auto my-2">
+        <div class="d-flex justify-content-center justify-content-md-center flex-nowrap overflow-auto gap-2" style="white-space: nowrap;">
+          <button class="btn btn-primary btn-tabs">All</button>
+          <button class="btn btn-primary btn-tabs">Real Estate</button>
+          <button class="btn btn-primary btn-tabs">Tours & Travels</button>
+          <button class="btn btn-primary btn-tabs">Healthcare</button>
+          <button class="btn btn-primary btn-tabs">E-commerce</button>
+        </div>
+      </div>
+      <!-- Filterable tabs  -->
+      
+      <div class="container d-flex align-items-center flex-wrap gap-3 my-5">
+        <div class="card card-shadow" style="width: 18rem;">
+            <img src="p-6.png" class="card-img-top" alt="p-6-logo">
+            <div class="card-body p-1">
+                <div class="d-flex flex-direction-col align-items-center justify-content-between">
+                    <h6 class="card-title mb-0">Pinki Pg Lodge</h6>
+                    <a href="#" class="btn btn-primary btn-tabs">View Live</a>
+                </div>
+              <p class="card-text lh-sm my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card card-shadow" style="width: 18rem;">
+            <img src="p-6.png" class="card-img-top" alt="p-6-logo">
+            <div class="card-body p-1">
+                <div class="d-flex flex-direction-col align-items-center justify-content-between">
+                    <h6 class="card-title mb-0">Pinki Pg Lodge</h6>
+                    <a href="#" class="btn btn-primary btn-tabs">View Live</a>
+                </div>
+              <p class="card-text lh-sm my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card card-shadow" style="width: 18rem;">
+            <img src="p-6.png" class="card-img-top" alt="p-6-logo">
+            <div class="card-body p-1">
+                <div class="d-flex flex-direction-col align-items-center justify-content-between">
+                    <h6 class="card-title mb-0">Pinki Pg Lodge</h6>
+                    <a href="#" class="btn btn-primary btn-tabs">View Live</a>
+                </div>
+              <p class="card-text lh-sm my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card card-shadow" style="width: 18rem;">
+            <img src="p-6.png" class="card-img-top" alt="p-6-logo">
+            <div class="card-body p-1">
+                <div class="d-flex flex-direction-col align-items-center justify-content-between">
+                    <h6 class="card-title mb-0">Pinki Pg Lodge</h6>
+                    <a href="#" class="btn btn-primary btn-tabs">View Live</a>
+                </div>
+              <p class="card-text lh-sm my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card card-shadow" style="width: 18rem;">
+            <img src="p-6.png" class="card-img-top" alt="p-6-logo">
+            <div class="card-body p-1">
+                <div class="d-flex flex-direction-col align-items-center justify-content-between">
+                    <h6 class="card-title mb-0">Pinki Pg Lodge</h6>
+                    <a href="#" class="btn btn-primary btn-tabs">View Live</a>
+                </div>
+              <p class="card-text lh-sm my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card card-shadow" style="width: 18rem;">
+            <img src="p-6.png" class="card-img-top" alt="p-6-logo">
+            <div class="card-body p-1">
+                <div class="d-flex flex-direction-col align-items-center justify-content-between">
+                    <h6 class="card-title mb-0">Pinki Pg Lodge</h6>
+                    <a href="#" class="btn btn-primary btn-tabs">View Live</a>
+                </div>
+              <p class="card-text lh-sm my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card card-shadow" style="width: 18rem;">
+            <img src="p-6.png" class="card-img-top" alt="p-6-logo">
+            <div class="card-body p-1">
+                <div class="d-flex flex-direction-col align-items-center justify-content-between">
+                    <h6 class="card-title mb-0">Pinki Pg Lodge</h6>
+                    <a href="#" class="btn btn-primary btn-tabs">View Live</a>
+                </div>
+              <p class="card-text lh-sm my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card card-shadow" style="width: 18rem;">
+            <img src="p-6.png" class="card-img-top" alt="p-6-logo">
+            <div class="card-body p-1">
+                <div class="d-flex flex-direction-col align-items-center justify-content-between">
+                    <h6 class="card-title mb-0">Pinki Pg Lodge</h6>
+                    <a href="#" class="btn btn-primary btn-tabs">View Live</a>
+                </div>
+              <p class="card-text lh-sm my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+
+        <footer class="py-5 px-2 bg-light" id="footer">
+            <div class="container">
+              <div class="text-sm text-muted text-center">
+                <div class="">&copy; <strong>Faiz Dev & Co.</strong> All rights reserved.</div>
+                <div>
+                    Design with ❤️ by Faiz Imam
+                </div>
+              </div>
+            </div>
+          </footer>
+              <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i class="fas fa-angle-up fa-x"></i></span></a></div>
+              <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
+              <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
+              <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
+              <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
+              <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+              <script src="./scripts/aos.min.js?ver=1.2.0"></script>
+              <script src="./scripts/main.js?ver=1.2.0"></script>
+            </body>
+          </html>
