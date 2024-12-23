@@ -1,0 +1,69 @@
+[data-aos] {
+  opacity: 1 !important;
+  transform: translate(0) scale(1) !important;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.main_logo {
+  height: 40px;
+}
+
+.faizz {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.faizz:hover {
+  box-shadow: none;
+}
+
+.btn-tabs {
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+@media (max-width: 576px) {
+  .btn-tabs {
+    width: auto; /* Make buttons full-width on small screens */
+  }
+  .btn-faiz {
+    overflow: scroll;
+  }
+
+  .small-screen-cards {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .small-screen-tabs {
+    justify-content: start !important;
+  }
+}
+
+.d-flex.overflow-auto {
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scrollbar-width: none; /* Narrow scrollbar for Firefox */
+}
+.d-flex.overflow-auto::-webkit-scrollbar {
+  height: 5px; /* Height for horizontal scrollbar */
+}
+.d-flex.overflow-auto::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Thumb color */
+  border-radius: 5px; /* Rounded scrollbar */
+}
+
+.card-shadow {
+  transition: all ease-in-out 0.1s;
+  cursor: pointer;
+}
+.card-shadow:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.parent-container {
+  height: 100vh;
+  overflow: auto;
+}
