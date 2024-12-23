@@ -11,6 +11,7 @@ body {
   height: 40px;
 }
 
+/* .faizz class is used for button box shadow  */
 .faizz {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -66,4 +67,8 @@ body {
 .parent-container {
   height: 100vh;
   overflow: auto;
+}
+
+.card-img-top{
+  height: 150px;
 }
