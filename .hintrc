@@ -36,7 +36,8 @@
           "-webkit-overflow-scrolling",
           "scrollbar-width",
           "scrollbar-width: none",
-          "-webkit-text-size-adjust"
+          "-webkit-text-size-adjust",
+          "scrollbar-color"
         ]
       }
     ]
