@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="card-body p-1">
               <div class="d-flex flex-direction-col align-items-center justify-content-between">
                 <h6 class="card-title mb-0">${card.title}</h6>
-                <a href="${card.link}" target="_blank" class="btn btn-primary btn-tabs">View Live</a>
+                <a id="live-link-animate" href="${card.link}" target="_blank" class="btn btn-primary btn-tabs">View Live</a>
               </div>
               <p class="card-text lh-sm my-2">${card.description}</p>
             </div>

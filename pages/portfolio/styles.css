@@ -43,6 +43,28 @@
       }
       /* BOOTSTRAP CUSTOMIZATION ENDS HERE */
 
+      /*Button animate */
+      header .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        background: #001219;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all ease-in-out 0.3s;
+      }
+
+      header .btn:hover{
+        background-color: white !important;
+        color: #001219 !important;
+        border: 1px solid #001219 !important;
+      }
+
+
+
+
             
       .main_logo {
         height: 40px;
@@ -61,6 +83,33 @@
         padding: 0.3rem 0.7rem;
         border-radius: 5px;
         font-weight: 400;
+      }
+
+      .btn-primary.active{
+        color: white !important;
+        background-color: #001219 !important;
+        border: 1px solid #001219;
+      }
+      .btn-primary.active:hover{
+        color: #ffffff !important;
+        background-color: #001219 !important;
+        border: 1px solid #001219;
+      }
+
+      .button-animate{
+        color: #001219 !important;
+        background-color: rgb(255, 255, 255) !important;
+        border: 1px solid #001219;
+      }
+      #live-link-animate{
+        background-color: white !important;
+        border: 1px solid #001219 !important;
+        color: #001219 !important;
+      }
+      #live-link-animate:hover{
+        background-color: #001219 !important;
+        border: 1px solid #001219;
+        color: white !important;
       }
 
       @media (max-width: 576px) {
