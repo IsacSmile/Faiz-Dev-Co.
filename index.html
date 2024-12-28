@@ -41,6 +41,51 @@
     </noscript>
     <style>
 
+ /* BOOTSTRAP CUSTOMIZATION STARTS HERE */
+      body{
+        color: #000000 !important;
+      }
+      .btn-primary {
+        color: white !important;
+        background-color: #001219 !important;
+        border-color: #001219 !important;
+      }
+    .btn-secondary {
+        background-color: #001219 !important;
+      }
+    .btn-primary:hover {
+        background-color: #212529 !important;
+        border-color: white !important;
+        color: white !important;
+      }
+    .text-primary {
+        color: rgb(0, 0, 0) !important;
+      }
+    .text-secondary {
+        color: rgb(0, 0, 0) !important;
+      }
+
+    /*Form control and Focus :--here--:*/
+    .form-control:focus,
+    .btn:focus {
+        outline: none !important; /* Optional */
+        box-shadow: none !important; /* Adjust color here */
+    }
+
+    input:focus, 
+    textarea:focus {
+        outline: none !important;
+        box-shadow: none !important; /* Remove Bootstrap's default focus ring */
+        border-color: rgb(0, 0, 0) !important; /* Optional: Custom border color on focus */
+    }
+/* BOOTSTRAP CUSTOMIZATION ENDS HERE */
+
+      
+      /*Parent Hero Section Starts Here */
+      .hero-section-target{
+        padding-top: 3rem;
+      }
+
       /*Hero big image START Here */
       .bounce-illustration {
         animation-name: bounce-illustration;
@@ -49,6 +94,7 @@
         animation-iteration-count: infinite;
     }
     
+
     @keyframes bounce-illustration {
         0%, 100% {
             transform: translateY(0); /* Start and end at the original position */
@@ -79,19 +125,34 @@
           background-image: url("/images/Progress-bar-img-mobile.png") !important;
           height: 321px !important;
         }
+        .hero-section-target{
+          padding-top: 0 !important;
+        }
+        
       } 
       @media screen and (max-width: 768.98px) and (min-width: 575.99px) {
-        
         .parent-progress-bar{
           height: 70vh !important;
         }
+        .hero-section-target{
+          padding-top: 0 !important;
+        }
       } 
       @media screen and (max-width: 912px) and (min-width: 768.99px) {
-        
         .parent-progress-bar{
           height: 44vh !important;
         }
+        .hero-section-target{
+          padding-top: 0 !important;
+        }
       } 
+      @media screen and (max-width: 1024px) and (min-width: 913px) {
+        .hero-section-target{
+          padding-top: 2rem !important;
+        }
+      } 
+
+
     
       /*Media Queries Universal After Changes of CSS */
 
@@ -102,7 +163,12 @@
       }
 
       .buttons-box-shadow{
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      /*  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+           -moz-box-shadow: 6px 5px 14px -6px rgba(0,0,0,0.41);
+          -webkit-box-shadow: 6px 5px 14px -6px rgba(0,0,0,0.41);
+          box-shadow: 6px 5px 14px -6px rgba(0,0,0,0.41);
+
+
       }
       .buttons-box-shadow:hover{
         box-shadow: none;
@@ -390,6 +456,9 @@
         background-repeat: no-repeat;
         width: auto;
       }
+
+      /* Servies Image CSS */
+     
       
     </style>
   </head>
@@ -415,8 +484,8 @@
     </header>
     <div class="page-content">
       <div id="content">
-  <header>
-    <div class="cover bg-light">
+  <div class="parent-hero-section-container">
+    <div class="cover bg-light hero-section-target">
       <div class="container px-2">
         <div class="row">
           <div class="col-lg-6">
@@ -431,7 +500,7 @@
       </div>
     </div>
     <div class="wave-bg"></div>
-  </header>
+  </div>
 
           <!-- Work With Us and ABOUT section starts here  -->
           <!-- Work With Us and ABOUT section starts here  -->
@@ -601,42 +670,42 @@
               </div>
               <div class="row py-3">
                 <div class="col-md-4 text-center mb-3" data-aos="fade-up" data-aos-delay="200"> 
-                  <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2" src="images\services\web-design.png" width="96" height="96" alt="web design"/></div>
+                  <div class="bg-white border rounded-circle d-inline-block p-2"><img id="services-img-target" class="p-2" src="images\services\web-design.png" width="96" height="96" alt="web design"/></div>
                   <div class="bg-white border rounded p-3 mt-n4">
                     <div class="h5 mt-3">Web Design</div>
                     <p class="text-small">Crafting visually appealing and user-friendly interfaces to enhance digital presence and engagement.</p>
                   </div>
                 </div>
                 <div class="col-md-4 text-center mb-3" data-aos="fade-up" data-aos-delay="200">
-                  <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2" src="images\services\web development.png" width="96" height="96" alt="graphic design"/></div>
+                  <div class="bg-white border rounded-circle d-inline-block p-2"><img id="services-img-target" class="p-2" src="images\services\web development.png" width="96" height="96" alt="graphic design"/></div>
                   <div class="bg-white border rounded p-3 mt-n4">
                     <div class="h5 mt-3">Web Develpoment</div>
                     <p class="text-small">Building robust and functional websites with advanced coding and programming languages.</p>
                   </div>
                 </div>
                 <div class="col-md-4 text-center mb-3" data-aos="fade-up" data-aos-delay="200">
-                  <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2" src="images\services\marketing png.png" width="96" height="96" alt="Ads campaign"/></div>
+                  <div class="bg-white border rounded-circle d-inline-block p-2"><img id="services-img-target" class="p-2" src="images\services\marketing png.png" width="96" height="96" alt="Ads campaign"/></div>
                   <div class="bg-white border rounded p-3 mt-n4">
                     <div class="h5 mt-3">Marketing & Ads</div>
                     <p class="text-small">Social media marketing uses targeted ads to increase brand awareness, engagement, and conversions.</p>
                   </div>
                 </div>
                 <div class="col-md-4 text-center mb-3" data-aos="fade-up" data-aos-delay="200">
-                  <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2" src="images\services\wordpress.png" width="96" height="96" alt="graphic design"/></div>
+                  <div class="bg-white border rounded-circle d-inline-block p-2"><img id="services-img-target" class="p-2" src="images\services\wordpress.png" width="96" height="96" alt="graphic design"/></div>
                   <div class="bg-white border rounded p-3 mt-n4">
                     <div class="h5 mt-3">WordPress Website</div>
                     <p class="text-small">Designing and developing websites using WordPress, a versatile and user-friendly content management system (CMS).</p>
                   </div>
                 </div>
                 <div class="col-md-4 text-center mb-3" data-aos="fade-up" data-aos-delay="200">
-                  <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2" src="images\services\shopify.png" width="96" height="96" alt="graphic design"/></div>
+                  <div class="bg-white border rounded-circle d-inline-block p-2"><img id="services-img-target" class="p-2" src="images\services\shopify.png" width="96" height="96" alt="graphic design"/></div>
                   <div class="bg-white border rounded p-3 mt-n4">
                     <div class="h5 mt-3">Shopify Website</div>
                     <p class="text-small">Developing e-commerce websites using Shopify, a platform that provides customizable templates and tools to sell products online effectively.</p>
                   </div>
                 </div>
                 <div class="col-md-4 text-center mb-3" data-aos="fade-up" data-aos-delay="200">
-                  <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2" src="images\services\e-com website.png" width="96" height="96" alt="ui-ux"/></div>
+                  <div class="bg-white border rounded-circle d-inline-block p-2"><img id="services-img-target" class="p-2" src="images\services\e-com website.png" width="96" height="96" alt="ui-ux"/></div>
                   <div class="bg-white border rounded p-3 mt-n4">
                     <div class="h5 mt-3">eCommerce Website</div>
                     <p class="text-small">Designing and developing online stores that facilitate buying and selling of products or services, secure payment gateways.</p>

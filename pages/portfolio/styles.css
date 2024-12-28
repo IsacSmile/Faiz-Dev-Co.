@@ -3,72 +3,109 @@
   transform: translate(0) scale(1) !important;
 }
 
-body {
-  scroll-behavior: smooth;
-}
+      /* BOOTSTRAP CUSTOMIZATION STARTS HERE */
+      body{
+        color: #000000 !important;
+        scroll-behavior: smooth;
+      }
+      .btn-primary {
+        color: white !important;
+        background-color: #001219 !important;
+        border-color: #001219 !important;
+      }
+      .btn-secondary {
+        background-color: #001219 !important;
+      }
+      .btn-primary:hover {
+        background-color: #212529 !important;
+        border-color: white !important;
+        color: white !important;
+      }
+      .text-primary {
+        color: rgb(0, 0, 0) !important;
+      }
+      .text-secondary {
+        color: rgb(0, 0, 0) !important;
+      }
 
-.main_logo {
-  height: 40px;
-}
+      /*Form control and Focus:--here--:*/
+      .form-control:focus,
+      .btn:focus {
+        outline: none !important; /* Optional */
+        box-shadow: none !important; /* Adjust color here */
+      }
 
-/* .faizz class is used for button box shadow  */
-.faizz {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-.faizz:hover {
-  box-shadow: none;
-}
+      input:focus, 
+      textarea:focus {
+        outline: none !important;
+        box-shadow: none !important; /* Remove Bootstrap's default focus ring */
+        border-color: rgb(0, 0, 0) !important; /* Optional: Custom border color on focus */
+      }
+      /* BOOTSTRAP CUSTOMIZATION ENDS HERE */
 
-.btn-tabs {
-  padding: 0.3rem 0.7rem;
-  border-radius: 5px;
-  font-weight: 400;
-}
+            
+      .main_logo {
+        height: 40px;
+      }
 
-@media (max-width: 576px) {
-  .btn-tabs {
-    width: auto; /* Make buttons full-width on small screens */
-  }
-  .btn-faiz {
-    overflow: scroll;
-  }
+      /* .faizz class is used for button box shadow  */
+      .faizz {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      }
+      .faizz:hover {
+        box-shadow: none;
+      }
 
-  .small-screen-cards {
-    align-items: center;
-    justify-content: center;
-  }
+      .btn-tabs {
+        padding: 0.3rem 0.7rem;
+        border-radius: 5px;
+        font-weight: 400;
+      }
 
-  .small-screen-tabs {
-    justify-content: start !important;
-  }
-}
+      @media (max-width: 576px) {
+        .btn-tabs {
+          width: auto; /* Make buttons full-width on small screens */
+        }
+        .btn-faiz {
+          overflow: scroll;
+        }
 
-.d-flex.overflow-auto {
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scrollbar-width: none; /* Narrow scrollbar for Firefox */
-}
-.d-flex.overflow-auto::-webkit-scrollbar {
-  height: 5px; /* Height for horizontal scrollbar */
-}
-.d-flex.overflow-auto::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2); /* Thumb color */
-  border-radius: 5px; /* Rounded scrollbar */
-}
+        .small-screen-cards {
+          align-items: center;
+          justify-content: center;
+        }
 
-.card-shadow {
-  transition: all ease-in-out 0.1s;
-  cursor: pointer;
-}
-.card-shadow:hover {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
+        .small-screen-tabs {
+          justify-content: start !important;
+        }
+      }
 
-.parent-container {
-  height: 100vh;
-  overflow: auto;
-}
+      .d-flex.overflow-auto {
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        scrollbar-width: none; /* Narrow scrollbar for Firefox */
+      }
+      .d-flex.overflow-auto::-webkit-scrollbar {
+        height: 5px; /* Height for horizontal scrollbar */
+      }
+      .d-flex.overflow-auto::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2); /* Thumb color */
+        border-radius: 5px; /* Rounded scrollbar */
+      }
 
-.card-img-top{
-  height: 150px;
-}
+      .card-shadow {
+        transition: all ease-in-out 0.1s;
+        cursor: pointer;
+      }
+      .card-shadow:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+
+      .parent-container {
+        height: 100vh;
+        overflow: auto;
+      }
+
+      .card-img-top{
+        height: 150px;
+      }
