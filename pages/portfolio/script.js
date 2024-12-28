@@ -181,6 +181,13 @@ const cardData = [
     description: "A creative showcase of designs and projects by Aman.",
     link: "https://isacsmile.github.io/Aman_Sharma/",
   },
+  {
+    category: "others",
+    title: "Umrah",
+    imageSrc: "../../images/portfolio/p-27.png",
+    description: "Easy Umrah and hajj pilgramage servies accross India.",
+    link: "https://easyumrahtour.com/",
+  },
 ];
 
 
