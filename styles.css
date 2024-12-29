@@ -125,6 +125,15 @@ header .btn:hover {
   .hero-section-target {
     padding-top: 0 !important;
   }
+  .marquee-container {
+    padding: 10px 0 !important;
+  }
+  .marquee {
+    animation: marquee 8s linear infinite !important;
+  }
+  .marquee img {
+    margin: 0 10px;
+  }
 }
 @media screen and (max-width: 768.98px) and (min-width: 575.99px) {
   .parent-progress-bar {
@@ -445,3 +454,36 @@ header .btn:hover {
 }
 
 /* Servies Image CSS */
+
+
+
+
+/* Trusted Here  */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  padding: 30px 0;
+  border: 1px solid #00121986;
+  border-radius: 70px;
+  width: 100% !important;
+
+}
+.marquee {
+  display: flex;
+  width: 200%; /* Adjust based on the number of images */
+  animation: marquee 30s linear infinite;
+}
+.marquee img {
+  height: 70px; /* Adjust the height as needed */
+  margin: 0 20px;
+  filter: grayscale(1);
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
