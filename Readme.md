@@ -1,1 +1,0 @@
-# Faiz Dev & Co.
