@@ -85,21 +85,23 @@
         font-weight: 400;
       }
 
-      .btn-primary.active{
+      .parent-container .btn-primaryy.active{
         color: white !important;
         background-color: #001219 !important;
         border: 1px solid #001219;
       }
-      .btn-primary.active:hover{
+      .parent-container .btn-primaryy.active:hover{
         color: #ffffff !important;
         background-color: #001219 !important;
         border: 1px solid #001219;
       }
 
+      
+
       .button-animate{
         color: #001219 !important;
         background-color: rgb(255, 255, 255) !important;
-        border: 1px solid #001219;
+        border: 1px solid #001219 !important;
       }
       #live-link-animate{
         background-color: white !important;
